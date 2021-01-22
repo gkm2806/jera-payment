@@ -5,17 +5,17 @@ module Iugu
         def call
           super
 
-          @sub_account = SubAccount.find_by(account_id: @params["data"]["account_id"])
+          @sub_account = SubAccount.find_by(account_id: @params['data']['account_id'])
 
           return 404 unless @sub_account.present?
 
-          if @params["data"]["status"] == "accepted"
+          if @params['data']['status'] == 'accepted'
             change_current_household
           else
             delete_household(@sub_account.households.last)
           end
 
-          return 200
+          200
         end
 
         private

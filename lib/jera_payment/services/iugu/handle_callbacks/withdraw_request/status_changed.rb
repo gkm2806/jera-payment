@@ -5,13 +5,13 @@ module Iugu
         def call
           super
 
-          @withdrawal = JeraPayment::Withdrawal.find_by(api_id: @params["data"]["id"])
+          @withdrawal = JeraPayment::Withdrawal.find_by(api_id: @params['data']['id'])
 
           return 404 unless @withdrawal.present?
 
-          @withdrawal.update(status: @params["data"]["status"], feedback: @params["data"]["feedback"])
+          @withdrawal.update(status: @params['data']['status'], feedback: @params['data']['feedback'])
 
-          return 200
+          200
         end
 
       end
