@@ -9,7 +9,6 @@ module Iugu
         def call
           Rails.logger.info("======> #{@params}")
         end
-
       end
     end
   end

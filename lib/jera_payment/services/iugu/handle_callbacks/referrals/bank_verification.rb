@@ -32,7 +32,6 @@ module Iugu
         def delete_household(household)
           household.destroy
         end
-
       end
     end
   end

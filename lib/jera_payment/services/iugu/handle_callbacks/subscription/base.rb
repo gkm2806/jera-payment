@@ -11,7 +11,6 @@ module Iugu
 
           return 200
         end
-
       end
     end
   end

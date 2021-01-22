@@ -46,7 +46,6 @@ module JeraPayment
 
             invoice_duplicated
           end
-
         end
       end
     end

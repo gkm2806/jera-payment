@@ -13,7 +13,6 @@ module Iugu
 
           200
         end
-
       end
     end
   end

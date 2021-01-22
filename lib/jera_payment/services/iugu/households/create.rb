@@ -11,7 +11,6 @@ module JeraPayment
 
             @resource.errors.blank?
           end
-
         end
       end
     end
